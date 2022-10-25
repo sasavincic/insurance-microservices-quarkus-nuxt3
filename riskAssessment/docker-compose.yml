@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  ml-storitev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - PROJECT="sasavincic/Summer-School"
+      - API_TOKEN="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiJhNGQ3OWZiNS0xNTgxLTQ2OGItOTZkOS0yN2YwMWUyOTdkNzgifQ=="
+      - MODEL="SUM-MLP"
+      - STAGE="production"
