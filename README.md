@@ -11,11 +11,13 @@ Nuxt3 (Vue.js), Firebase, Quarkus, Panache, Postgres.
 
 2. To run **ui**:
   - create `.env` file in root which contains:
+      ```
       INSURANCE_BASE_API="http://localhost:50001/insurance"
       CLAIM_BASE_API="http://localhost:50002/claim"
       INSURED_PERSON_BASE_API="http://localhost:50003/insuredPerson"
       RISK_ASSESSMENT_BASE_API="http://localhost:5000"
       FIREBASE_API_KEY="{YOUR_API_KEY}"
+      
   - run `npm i`
   - run `npm run dev`
 
